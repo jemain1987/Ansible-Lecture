@@ -1,0 +1,32 @@
+# to upload stuff into github start by ,,,,  sudo yum install git , git init , git status , git branch -m main
+# How to add stuff in git ,, git add . , git status , git commit -m "Adding ansible files to repo"
+# how to encrypt a key.pem === ansible-vault encrypt vars.yaml ,,,,, password ==1234
+# How to decrypt the file ==== ansible-vault decrypt vars.yaml
+# to view the contain of encryption ,,,, ansible-vault view vars.yaml
+# How to run an encrypted ansible-playbook ==== ansible-playbook --ask-vault-pass site.yaml
+# cat /etc/group ,,,, to view all groups file 
+# pick == wheel:x:10:ec2-user # use to create multiple task
+# yum list tree
+#  sudo yum install tree
+# type === tree ,,, show file tree structure
+# ansible-galaxy init first_role
+# change playbook.yaml TO site.yaml
+# tree -a ,,, show tree structure
+# curl localhost:80 ==== to view what was writting
+# ansible-playbook playbook.yaml == to display anything writting in my play book
+#  sudo systemctl status httpd == to check to see if a file is active and running
+# ansible-inventory --graph === to view all your ec2 instance on your console
+# export AWS_SECRET_ACCESS_KEY="NPndV2FpVV4idBIvprmbBnxyLF0it+08iTw1NbRf"  ==== need to run your access key id and secreate access key id
+# sudo yum install pip ,, pip install boto3 ,, pip install botocore ,,, sudo yum install git 
+# chmod 400 ansible_key.pem === to change the file permisssion ===== ansible.cfg
+# python3 -m pip install --user ansible-lint ,,, 
+# ansible localhost -m file -a "path=./playbook.yaml state=touch" === to create a file OR playbook.yaml
+# ansible localhost -m file -a "path=./playbook.yaml state=absent" ==== to delete a file
+# ansible-inventory --list ,,, to list everything
+# ansible localhost -m file -a "path=./ansible_key.pem state=touch" ,,,vars.yaml ,,, inventory.ini ,,, ansible.cfg ,,, Ansible_workbook
+# ansible localhost -m copy -a "src=./test.txt dest=./new_folder"
+# ansible localhost -m replace -a "path=./test.txt regexp='skillstorm DevOps' replace='the world'" cat test.txt
+# ansible localhost -m lineinfile -a "path=./test.txt line='Welcome to skillstorm DevOps'" ,,, to add a line to the file
+# mkdir normalDirectory ,,,  ansible localhost -m file -a "path=./new_folder state=touch"
+# which ansible ,,, echo $PATH ,,,, export PATH="$PATH:/home/ec2-user/.local/bin"
+# ls -a ,,, cd .local/ ,,, cd bin ,,, sudo yum install python ,,, sudo yum install pip3 ,,,sudo yum install pip ,,, pip install ansible

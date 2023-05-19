@@ -1,0 +1,13 @@
+---
+- name: My First Playbook   # my playbook name
+  hosts: tags_Name_jjinwen* # my ec2 instance tag
+  gather_facts: false
+  become: true # to activated a root user
+  vars_files:
+    - "vars.yaml"
+
+  roles:
+    - first_role
+    - second_role
+    
+  
